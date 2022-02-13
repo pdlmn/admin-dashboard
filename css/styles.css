@@ -1,6 +1,7 @@
 :root {
   --bg-clr-1: rgb(4, 120, 87);
-  --bg-clr-2: rgb(54, 54, 54);
+  --bg-clr-2: rgb(5, 150, 105);
+  --bg-clr-3: rgb(54, 54, 54);
   --font-clr: rgb(230, 230, 230);
 }
 
@@ -25,8 +26,17 @@ a {
 }
 
 .header {
-  background: var(--bg-clr-2);
+  background: var(--bg-clr-3);
   grid-area: 1 / 2 / 2 / 3;
+}
+
+.btn {
+  text-decoration: none;
+  color: var(--font-clr);
+  background: var(--bg-clr-2);
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 12px;
 }
 
 .sidebar {
