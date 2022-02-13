@@ -1,5 +1,6 @@
 :root {
   --clr-1: rgb(4, 120, 87);
+  --font-clr: rgb(230, 230, 230);
 }
 
 html, body {
@@ -8,13 +9,18 @@ html, body {
 
 body {
   font-family: sans-serif;
+  color: var(--font-clr);
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr 5fr;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 3fr;
 }
 
 .header {
@@ -25,6 +31,39 @@ body {
 .sidebar {
   background: var(--clr-1);
   grid-area: 1 / 1 / -1 / 2;
+}
+
+.logo {
+  padding-left: 12px;
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  place-items: center;
+  gap: 8px;
+}
+
+.logo h1 {
+  justify-self: start;
+}
+
+.sidebar-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav-item a {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--font-clr);
+  padding-left: 12px;
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 8px;
+  place-items: center;
+}
+
+.sidebar-nav-item div {
+  justify-self: start;
 }
 
 .content {
