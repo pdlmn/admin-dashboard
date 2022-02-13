@@ -1,5 +1,6 @@
 :root {
-  --clr-1: rgb(4, 120, 87);
+  --bg-clr-1: rgb(4, 120, 87);
+  --bg-clr-2: rgb(54, 54, 54);
   --font-clr: rgb(230, 230, 230);
 }
 
@@ -8,7 +9,7 @@ html, body {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: roboto, sans-serif;
   color: var(--font-clr);
 }
 
@@ -24,12 +25,12 @@ a {
 }
 
 .header {
-  background: yellow;
+  background: var(--bg-clr-2);
   grid-area: 1 / 2 / 2 / 3;
 }
 
 .sidebar {
-  background: var(--clr-1);
+  background: var(--bg-clr-1);
   grid-area: 1 / 1 / -1 / 2;
   display: grid;
   gap: 32px;
@@ -57,7 +58,7 @@ a {
 
 .sidebar-nav-item a {
   font-size: 1.3rem;
-  font-weight: 600;
+  font-weight: bold;
   color: var(--font-clr);
   padding-left: 12px;
   display: grid;
@@ -71,7 +72,7 @@ a {
 }
 
 .push-down {
-  margin-bottom: 48px;
+  padding-bottom: 48px;
 }
 
 .content {
