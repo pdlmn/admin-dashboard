@@ -1,0 +1,33 @@
+:root {
+  --clr-1: rgb(4, 120, 87);
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+}
+
+.header {
+  background: yellow;
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.sidebar {
+  background: var(--clr-1);
+  grid-area: 1 / 1 / -1 / 2;
+}
+
+.content {
+  background: azure;
+  grid-area: 2 / 2 / -1 / -1;
+}
