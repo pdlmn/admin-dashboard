@@ -31,6 +31,8 @@ a {
 .sidebar {
   background: var(--clr-1);
   grid-area: 1 / 1 / -1 / 2;
+  display: grid;
+  gap: 32px;
 }
 
 .logo {
@@ -49,6 +51,8 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: grid;
+  gap: 24px;
 }
 
 .sidebar-nav-item a {
@@ -64,6 +68,10 @@ a {
 
 .sidebar-nav-item div {
   justify-self: start;
+}
+
+.push-down {
+  margin-bottom: 48px;
 }
 
 .content {
