@@ -30,7 +30,7 @@ a {
 .container {
   height: 100%;
   display: grid;
-  grid-template-columns: minmax(200px, 400px) 4fr;
+  grid-template-columns: 250px 4fr;
   grid-template-rows: 200px 4fr;
 }
 
@@ -61,7 +61,7 @@ a {
   background: rgb(110, 110, 110);
   padding: 8px 12px;
   color: var(--font-clr-1);
-  width: 95%;
+  width: clump(150px, 95%, 500px);
 }
 
 .account-corner {
@@ -331,4 +331,3 @@ a {
   height: 70px;
   background-size: 100px;
 }
-
