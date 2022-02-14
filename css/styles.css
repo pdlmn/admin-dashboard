@@ -30,7 +30,7 @@ a {
 .container {
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: minmax(200px, 400px) 4fr;
   grid-template-rows: 200px 4fr;
 }
 
@@ -113,7 +113,7 @@ a {
 .profile-pic-big {
   background: url('../assets/profile_pic.webp');
   background-position: center;
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
 .profile-pic {
@@ -286,4 +286,49 @@ a {
   background: rgba(20, 20, 20, 0.9);
 }
 
-.trending
+.trending-list {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.trending-user {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.user-info {
+  font-size: 1.1rem;
+  display: grid;
+  gap: 4px;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.user-project {
+  color: var(--font-clr-2);
+}
+
+.profile-pic2 {
+  background: url('../assets/profile_pic2.jpg');
+}
+.profile-pic3 {
+  background: url('../assets/profile_pic3.jpg');
+}
+.profile-pic4 {
+  background: url('../assets/profile_pic4.jpg');
+}
+
+.profile-pic2,
+.profile-pic3,
+.profile-pic4 {
+  background-position: center;
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  background-size: 100px;
+}
+
